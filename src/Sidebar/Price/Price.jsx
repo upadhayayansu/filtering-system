@@ -21,7 +21,7 @@ function Price() {
       </label>
       <label className="Sidebar-label-container">
         <input type="radio" name="test2" />
-        <span className="checkmark"></span>over $150
+        <span className="checkmark"></span>over
       </label>
     </div>
   );

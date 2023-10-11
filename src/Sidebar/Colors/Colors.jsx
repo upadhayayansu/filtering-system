@@ -2,6 +2,7 @@ import "./Colors.css";
 function Colors() {
   return (
     <div>
+      <h2 className="sidebar-title color-title">Colors</h2>
       <label className="Sidebar-label-container color-title">
         <input type="radio" name="test2" />
         <span className="checkmark"></span>All
