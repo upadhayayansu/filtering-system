@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navigation from "./Navigation/Nav";
 import Products from "./products/Products";
-import Products from "./db/data";
+import ProductsList from "./db/data";
 import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
 import Card from "./components/Card";
@@ -17,11 +17,9 @@ function App() {
     setQuery(event.target.value);
   };
 
-  const filteredItems = Products.filter
-  (product) =>
-    product.title.toLowerCase().indexOf(query.toLowerCase()) 
-    -1
-  };
+  const filteredItems = ProductsList.filter((product) => {
+    return product.title.toLowerCase().indexOf(query.toLowerCase());
+  });
 
   // ----------- Radio Filtering -----------
   const handleChange = (event) => {
@@ -68,7 +66,7 @@ function App() {
     );
   }
 
-  const result = filteredData(products, selectedCategory, query);
+  const result = filteredData(ProductsList, selectedCategory, query);
 
   return (
     <>
