@@ -1,6 +1,9 @@
 import { BsFillBagFill } from "react-icons/bs";
 
-const Card = ({ img, title, star, reviews, prevPrice, newPrice }) => {
+const Card = ({ props }) => {
+  console.log(props);
+
+  const { img, title, star, reviews, prevPrice, newPrice } = props;
   return (
     <>
       <section className="card">

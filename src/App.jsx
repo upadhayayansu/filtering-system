@@ -70,10 +70,12 @@ function App() {
 
   return (
     <>
-      <Sidebar handleChange={handleChange} />
       <Navigation query={query} handleInputChange={handleInputChange} />
       <Recommended handleClick={handleClick} />
-      <Products result={result} />
+      <div style={{ display: "flex" }}>
+        <Sidebar handleChange={handleChange} />
+        <Products result={result} />
+      </div>
     </>
   );
 }

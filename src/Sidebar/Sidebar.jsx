@@ -6,18 +6,12 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import "./Sidebar.css";
 function Sidebar({ handleChange }) {
   return (
-    <>
-      <section className="sidebar">
-        <div className="logo-container">
-          <h1>
-            <AiOutlineShoppingCart />
-          </h1>
-        </div>
-        <Category handleChange={handleChange} />
-        <Price handleChange={handleChange} />
-        <Colors handleChange={handleChange} />
-      </section>
-    </>
+    <section className="sidebar">
+      <div className="logo-container"></div>
+      <Category handleChange={handleChange} />
+      <Price handleChange={handleChange} />
+      <Colors handleChange={handleChange} />
+    </section>
   );
 }
 export default Sidebar;
