@@ -5,11 +5,11 @@ function Nav() {
   return (
     <nav>
       <div className="nav-container">
-        <input
+        {/* <input
           type="text"
           className="search-input"
           placeholder="Enter your search shoes."
-        />
+        /> */}
       </div>
       <div className="profile-container">
         <a href="#">
